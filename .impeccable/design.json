@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-19T00:00:00Z",
+  "title": "Design System: Aakkagam Games",
+  "extensions": {
+    "colorMeta": {
+      "terracotta": {
+        "role": "primary",
+        "displayName": "Terracotta",
+        "canonical": "#8b3a2b",
+        "darkScheme": "#e0805f",
+        "tonalRamp": ["#33150f", "#4f2018", "#6c2d20", "#8b3a2b", "#b05a42", "#cc7a5e", "#e0a084", "#f2cdb8"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#2b2320",
+        "darkScheme": "#ece5df",
+        "tonalRamp": ["#191412", "#2b2320", "#463b36", "#635550", "#83746d", "#a3968e", "#c5bab2", "#e6ded7"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#faf6f0",
+        "darkScheme": "#1d1917",
+        "tonalRamp": ["#1d1917", "#38312d", "#564c46", "#766a62", "#978a80", "#b9aca1", "#dcd2c7", "#faf6f0"]
+      },
+      "muted-clay": {
+        "role": "neutral",
+        "displayName": "Muted Clay",
+        "canonical": "#6b5f58",
+        "darkScheme": "#a3968e",
+        "tonalRamp": ["#171310", "#2e2824", "#463e38", "#5f544d", "#6b5f58", "#8a7d74", "#a3968e", "#cfc4bb"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The single page headline (h1)." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings (h2), set in Terracotta." },
+      "title": { "displayName": "Title", "purpose": "Game names inside cards (h3)." },
+      "body": { "displayName": "Body", "purpose": "All prose; ~70ch lines inside the 42rem column." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Play Button",
+      "kind": "button",
+      "refersTo": "button-play",
+      "description": "The one terracotta action per game card; an anchor styled as a stamped-clay button.",
+      "html": "<a class=\"ds-btn-play\" href=\"#\">Play align3 free</a>",
+      "css": ".ds-btn-play { display: inline-block; background: #8b3a2b; color: #faf6f0; text-decoration: none; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: bold; font-family: Georgia, 'Times New Roman', serif; transition: background 0.15s ease-out; } .ds-btn-play:hover { background: #6c2d20; } .ds-btn-play:focus-visible { outline: 2px solid #8b3a2b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Game Card",
+      "kind": "card",
+      "refersTo": "card-game",
+      "description": "One bordered card per game: name, short rules prose, Play button. Flat, thin Muted Clay border, no shadow.",
+      "html": "<article class=\"ds-card-game\"><h3>align3 — Terni Lapilli &amp; Tamil kattam</h3><p>Three men's morris for two players: place three stones, then slide them along the lines until someone lines up all three.</p><a class=\"ds-btn-play\" href=\"#\">Play align3 free</a></article>",
+      "css": ".ds-card-game { border: 1px solid #6b5f58; border-radius: 10px; padding: 1.25rem 1.5rem; font-family: Georgia, 'Times New Roman', serif; color: #2b2320; background: #faf6f0; line-height: 1.6; } .ds-card-game h3 { margin-top: 0; font-size: 1.1rem; } .ds-btn-play { display: inline-block; background: #8b3a2b; color: #faf6f0; text-decoration: none; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: bold; margin-top: 0.5rem; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Terracotta serif h2; the only place besides links and buttons where the accent appears.",
+      "html": "<h2 class=\"ds-heading\">Play Now</h2>",
+      "css": ".ds-heading { font-family: Georgia, 'Times New Roman', serif; font-size: 1.4rem; font-weight: 700; color: #8b3a2b; margin: 0; }"
+    },
+    {
+      "name": "FAQ Entry",
+      "kind": "custom",
+      "refersTo": "body",
+      "description": "Semantic definition-list Q&A; bold question, plain answer, no accordion.",
+      "html": "<dl class=\"ds-faq\"><dt>Do I need an account or app to play?</dt><dd>No. Every game runs directly in the browser with no download, no sign-up, and no ads.</dd></dl>",
+      "css": ".ds-faq { font-family: Georgia, 'Times New Roman', serif; color: #2b2320; line-height: 1.6; margin: 0; } .ds-faq dt { font-weight: bold; margin-top: 1.25rem; } .ds-faq dd { margin: 0.25rem 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sand Kattam",
+    "overview": "A board drawn in warm sand, played with pebbles and tamarind seeds. Everything on this page should feel handmade, warm, and tactile: paper the color of dry sand, ink the color of dark earth, one terracotta accent like fired clay. The page is a single quiet column of serif prose, the way a good museum postcard explains an artifact in a few honest sentences. The system explicitly rejects the ad-heavy game portal, the generic SaaS landing template, the dark gamer aesthetic, and the kids' cartoon site. Its lightness is literal: one static HTML file, system serif, no images required to render.",
+    "keyCharacteristics": [
+      "Warm tinted neutrals; nothing is pure black or pure white",
+      "One terracotta accent doing all the color work (Restrained strategy)",
+      "Single-column prose layout, capped at 42rem",
+      "Serif throughout; hierarchy by size and weight, not font changes",
+      "Flat surfaces, thin borders, no shadows, no motion"
+    ],
+    "rules": [
+      { "name": "The Fired Clay Rule", "body": "Terracotta appears on at most 10% of the page: links, h2 headings, and Play buttons. If terracotta starts covering backgrounds or large panels, it has escaped the kiln.", "section": "colors" },
+      { "name": "The No Pure Rule", "body": "#000 and #fff are forbidden. Every neutral is tinted toward the warm brown hue.", "section": "colors" },
+      { "name": "The One Family Rule", "body": "Georgia carries everything. Hierarchy comes from size and weight only; introducing a second family needs a reason as strong as a new game launch.", "section": "typography" },
+      { "name": "The Sand Is Flat Rule", "body": "A board drawn in sand casts no shadows. Neither does this page.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the whole page one static HTML file with inline CSS; no build step, no external fonts or scripts.",
+      "Do give every game exactly one terracotta Play link, with an honest label (\"Play align3 free\").",
+      "Do support both schemes via prefers-color-scheme; every color has a light and dark value.",
+      "Do hold AA contrast in both schemes, including Paper-on-Terracotta button text.",
+      "Do let history do the persuading: specific, true detail over superlatives."
+    ],
+    "donts": [
+      "Don't build an \"ad-heavy game portal\": no thumbnail grids, no screaming CTAs, no clutter.",
+      "Don't use the \"generic SaaS landing\" template: no hero gradients, no feature-card triptychs, no testimonials.",
+      "Don't go \"dark gamer\": no neon on black, no glow effects.",
+      "Don't go \"kids' cartoon\": no bubble letters, no mascots, no primary-color overload.",
+      "Don't use #000 or #fff, box-shadows, gradient text, or colored side-stripe borders.",
+      "Don't add motion; if any is ever added, it must respect prefers-reduced-motion."
+    ]
+  }
+}

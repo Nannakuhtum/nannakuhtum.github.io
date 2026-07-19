@@ -1,19 +1,21 @@
 # Aakkagam Games
 
-> Free browser-based two-player board games rebuilt from ancient game traditions. No sign-up, no download, no ads — two players share one screen and pass the device between turns.
+> Free browser-based board games and puzzles rebuilt from ancient game traditions. No sign-up, no download, no ads. Two-player games are hotseat: both players share one screen and pass the device between turns.
 
-Aakkagam Games publishes small, fast web implementations of historic abstract strategy games, starting with the three-in-a-row family (three men's morris). Each game is playable at a subpath of https://games.aakkagam.com/.
+Aakkagam Games publishes small, fast web implementations of historic abstract games: the three-in-a-row family (three men's morris) and Archimedes' dissection puzzle. Each game is playable at a subpath of https://games.aakkagam.com/.
 
 ## Games
 
 - [align3](https://games.aakkagam.com/align3/): Three men's morris for two players on one device. Each player has three stones on a nine-point board; place them, then slide along the lines until one player aligns all three. Includes two historically distinct variants with different win conditions:
   - Roman circle (Terni Lapilli): win on any of 4 spokes through the center, or any 3 consecutive rim points. Based on the game whose boards are scratched into Roman ruins.
   - Tamil square (kattam): win only on the 8 straight lines of a 3×3 grid (rows, columns, diagonals). Based on the Tamil pebble game drawn as a grid in the sand.
+- [ostomachion](https://games.aakkagam.com/ostomachion/): Archimedes' 14-piece square dissection puzzle (also called the stomachion or loculus of Archimedes) for one player. Scramble the pieces, then rebuild the square; there are 17,152 distinct solutions, a count settled by mathematicians in 2003. Archimedes wrote a treatise on it, one of the earliest known mathematical studies of a puzzle; it survives partly in the Archimedes Palimpsest.
 
 ## Key facts
 
 - All games are free, ad-free, and require no account.
-- Games run entirely in the browser (mobile and desktop); local hotseat play for exactly 2 players.
+- Games run entirely in the browser (mobile and desktop).
+- align3 is local hotseat play for exactly 2 players; ostomachion is a solo puzzle.
 - Three men's morris differs from tic-tac-toe: with only three pieces per player, play continues after placement with sliding moves, so games don't stall into automatic draws.
 
 ## Site
